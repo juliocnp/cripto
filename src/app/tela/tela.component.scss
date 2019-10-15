@@ -1,0 +1,50 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    .grid {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "cadastro criptografado"
+                            "cadastro normal";
+        
+        .svg {
+            width: 45px;
+            height: 45px;
+        }
+
+        .cadastro {
+            padding: 1%;
+            grid-area: cadastro;
+            border: 2px solid #ccc;
+            border-radius: 16px;
+            margin: 5px;
+            background-color: #7fffa3;
+        }
+        .criptografado {
+            padding: 1%;
+            grid-area: criptografado;
+            border: 2px solid #ccc;
+            border-radius: 16px;
+            margin: 5px;
+            background-color: #7f92ff;
+        }
+        .normal {
+            padding: 1%;
+            grid-area: normal;
+            border: 2px solid #ccc;
+            border-radius: 16px;
+            margin: 5px;
+            background-color: #ff8e8e;
+        }
+
+        .flex {
+            display: flex;
+        }
+        .center-content {
+            justify-content: center;
+        }
+    }
+}

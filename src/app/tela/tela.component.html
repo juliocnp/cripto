@@ -2,23 +2,60 @@
     <div class="grid">
         <div class="cadastro">
             <div class="flex center-content"><img src="../../assets/user-edit-solid.svg" class="svg"/></div>
-            <div class="flex center-content">
-                <form class="example-form">
-                    <mat-form-field class="example-full-width">
-                      <input matInput placeholder="Favorite food" value="Sushi">
-                    </mat-form-field>
-                  
-                    <mat-form-field class="example-full-width">
-                      <textarea matInput placeholder="Leave a comment"></textarea>
-                    </mat-form-field>
-                  </form>
+            <div class="flex center-content padding-top-7">
+                <span class="label">Nome:</span> <input class="input" [(ngModel)]="Nome">
+            </div>
+            <div class="flex center-content padding-top-7">
+                <span class="label">CPF:</span> <input class="input" [(ngModel)]="CPF">
+            </div>
+            <div class="flex center-content padding-top-7">
+                <span class="label">Idade:</span> <input class="input" [(ngModel)]="Idade">
+            </div>
+            <div class="flex center-content padding-top-7">
+                <span class="label">Endereço:</span> <input class="input" [(ngModel)]="Endereco">
+            </div>
+            <div class="flex center-content padding-top-7">
+                <span class="label">Sexo:</span> <input class="input" [(ngModel)]="Sexo">
+            </div>
+            <div class="flex center-content logo-container">
+                <img src="../../assets/logo.png" class="logo">
             </div>
         </div>
         <div class="criptografado">
             <img src="../../assets/lock-solid.svg" class="svg"/>
+            <div class="flex center-content padding-top-3">
+                <span class="label">Nome:</span> <input class="input" [(ngModel)]="NomeCriptografado">
+            </div>
+            <div class="flex center-content padding-top-3">
+                <span class="label">CPF:</span> <input class="input" [(ngModel)]="CPFCriptografado">
+            </div>
+            <div class="flex center-content padding-top-3">
+                <span class="label">Idade:</span> <input class="input" [(ngModel)]="IdadeCriptografado">
+            </div>
+            <div class="flex center-content padding-top-3">
+                <span class="label">Endereço:</span> <input class="input" [(ngModel)]="EnderecoCriptografado">
+            </div>
+            <div class="flex center-content padding-top-3">
+                <span class="label">Sexo:</span> <input class="input" [(ngModel)]="SexoCriptografado">
+            </div>
         </div>
         <div class="normal">
             <img src="../../assets/lock-open-solid.svg" class="svg"/>
+            <div class="flex center-content padding-top-3">
+                <span class="label">Nome:</span> <input class="input" [(ngModel)]="NomeNormal">
+            </div>
+            <div class="flex center-content padding-top-3">
+                <span class="label">CPF:</span> <input class="input" [(ngModel)]="CPFNormal">
+            </div>
+            <div class="flex center-content padding-top-3">
+                <span class="label">Idade:</span> <input class="input" [(ngModel)]="IdadeNormal">
+            </div>
+            <div class="flex center-content padding-top-3">
+                <span class="label">Endereço:</span> <input class="input" [(ngModel)]="EnderecoNormal">
+            </div>
+            <div class="flex center-content padding-top-3">
+                <span class="label">Sexo:</span> <input class="input" [(ngModel)]="SexoNormal">
+            </div>
         </div>
     </div>  
 </div>

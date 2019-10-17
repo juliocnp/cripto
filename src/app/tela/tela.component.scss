@@ -29,6 +29,10 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(1fr, 7);
+
         }
         .criptografado {
             padding: 1%;
@@ -53,17 +57,24 @@
             background-size: cover;
         }
 
+        .botao-criptografar {
+            height: 80px;
+            align-self: center;
+        }
+
+        .botao-descriptografar {
+            margin-right: 8px;
+        }
+        
+        .space-between {
+            justify-content: space-between;
+        }
+
         .flex {
             display: flex;
         }
         .center-content {
             justify-content: center;
-        }
-        .logo {
-            align-self: center;
-            height: auto;
-            max-width: 10vw;
-            cursor: pointer;
         }
         .input {
             height: 20px;
@@ -74,15 +85,13 @@
             font-size: 14px;
             width: 100%;
             margin-right: 10%;
+            align-self: center;
         }
         .padding-left-8px {
             padding-left: 8px;
         } 
-        .padding-top-7 {
-            padding-top: 7vh;
-        }
         .padding-top-3 {
-            padding-top: 3vh;
+            padding-top: 3%;
         }
         .label {
             align-self: center;

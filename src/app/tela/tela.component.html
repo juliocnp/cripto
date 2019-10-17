@@ -2,27 +2,30 @@
     <div class="grid">
         <div class="cadastro">
             <div class="flex center-content"><img src="../../assets/user-edit-solid.svg" class="svg"/></div>
-            <div class="flex center-content padding-top-7">
+            <div class="flex center-content">
                 <span class="label">Nome:</span> <input class="input" [(ngModel)]="Nome">
             </div>
-            <div class="flex center-content padding-top-7">
+            <div class="flex center-content">
                 <span class="label">CPF:</span> <input class="input" [(ngModel)]="CPF">
             </div>
-            <div class="flex center-content padding-top-7">
+            <div class="flex center-content">
                 <span class="label">Idade:</span> <input class="input" [(ngModel)]="Idade">
             </div>
-            <div class="flex center-content padding-top-7">
+            <div class="flex center-content">
                 <span class="label">Endereço:</span> <input class="input" [(ngModel)]="Endereco">
             </div>
-            <div class="flex center-content padding-top-7">
+            <div class="flex center-content">
                 <span class="label">Sexo:</span> <input class="input" [(ngModel)]="Sexo">
             </div>
             <div class="flex center-content logo-container">
-                <img src="../../assets/logo.png" class="logo">
+                <button mat-raised-button color="primary" class="botao-criptografar" (click)="criptografar()">Criptografar</button>
             </div>
         </div>
         <div class="criptografado">
-            <img src="../../assets/lock-solid.svg" class="svg"/>
+            <div class="flex space-between">
+                <img src="../../assets/lock-solid.svg" class="svg"/>
+                <button mat-raised-button color="primary" class="botao-descriptografar" (click)="descriptografar()">Descriptografar</button>
+            </div>
             <div class="flex center-content padding-top-3">
                 <span class="label">Nome:</span> <input class="input" [(ngModel)]="NomeCriptografado">
             </div>

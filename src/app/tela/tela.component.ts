@@ -35,59 +35,78 @@ export class TelaComponent implements OnInit {
   }
 
   criptografar() {
-    this.criptografia.criptografar(this.Nome).subscribe(
-      result => {
-        this.NomeCriptografado = result.mensagem;
-      }
-    )
-    this.criptografia.criptografar(this.CPF).subscribe(
-      result => {
-        this.CPFCriptografado = result.mensagem;
-      }
-    )
-    this.criptografia.criptografar(this.Idade).subscribe(
-      result => {
-        this.IdadeCriptografado = result.mensagem;
-      }
-    )
-    this.criptografia.criptografar(this.Endereco).subscribe(
-      result => {
-        this.EnderecoCriptografado = result.mensagem;
-      }
-    )
-    this.criptografia.criptografar(this.Sexo).subscribe(
-      result => {
-        this.SexoCriptografado = result.mensagem;
-      }
-    )
+    if (this.Nome && this.Nome !== '') {
+      this.criptografia.criptografar(this.Nome).subscribe(
+        result => {
+          this.NomeCriptografado = result.mensagem;
+        }
+      );
+    }
+    if (this.CPF && this.CPF !== '') {
+      this.criptografia.criptografar(this.CPF).subscribe(
+        result => {
+          this.CPFCriptografado = result.mensagem;
+        }
+      );
+    }
+    if (this.Idade && this.Idade !== '') {
+      this.criptografia.criptografar(this.Idade).subscribe(
+        result => {
+          this.IdadeCriptografado = result.mensagem;
+        }
+      );
+    }
+    if (this.Endereco && this.Endereco !== '') {
+      this.criptografia.criptografar(this.Endereco).subscribe(
+        result => {
+          this.EnderecoCriptografado = result.mensagem;
+        }
+      );
+    }
+    if (this.Sexo && this.Sexo !== '') {
+      this.criptografia.criptografar(this.Sexo).subscribe(
+        result => {
+          this.SexoCriptografado = result.mensagem;
+        }
+      );
+    }
   }
 
   descriptografar() {
-    this.criptografia.descriptografar(this.NomeCriptografado).subscribe(
-      result => {
-        this.NomeNormal = result.mensagem;
-      }
-    )
-    this.criptografia.descriptografar(this.CPFCriptografado).subscribe(
-      result => {
-        this.CPFNormal = result.mensagem;
-      }
-    )
-    this.criptografia.descriptografar(this.IdadeCriptografado).subscribe(
-      result => {
-        this.IdadeNormal = result.mensagem;
-      }
-    )
-    this.criptografia.descriptografar(this.EnderecoCriptografado).subscribe(
-      result => {
-        this.EnderecoNormal = result.mensagem;
-      }
-    )
-    this.criptografia.descriptografar(this.SexoCriptografado).subscribe(
-      result => {
-        this.SexoNormal = result.mensagem;
-      }
-    )
+    if (this.NomeCriptografado && this.NomeCriptografado !== '') {
+      this.criptografia.descriptografar(this.NomeCriptografado).subscribe(
+        result => {
+          this.NomeNormal = result.mensagem;
+        }
+      );
+    }
+    if (this.CPFCriptografado && this.CPFCriptografado !== '') {
+      this.criptografia.descriptografar(this.CPFCriptografado).subscribe(
+        result => {
+          this.CPFNormal = result.mensagem;
+        }
+      );
+    }
+    if (this.IdadeCriptografado && this.IdadeCriptografado !== '') {
+      this.criptografia.descriptografar(this.IdadeCriptografado).subscribe(
+        result => {
+          this.IdadeNormal = result.mensagem;
+        }
+      );
+    }
+    if (this.EnderecoCriptografado && this.EnderecoCriptografado !== '') {
+      this.criptografia.descriptografar(this.EnderecoCriptografado).subscribe(
+        result => {
+          this.EnderecoNormal = result.mensagem;
+        }
+      );
+    }
+    if (this.SexoCriptografado && this.SexoCriptografado !== '') {
+      this.criptografia.descriptografar(this.SexoCriptografado).subscribe(
+        result => {
+          this.SexoNormal = result.mensagem;
+        }
+      );
+    }
   }
-
 }
